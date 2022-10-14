@@ -1,0 +1,76 @@
+@font-face {
+    src: url("CursedTimerULiL.ttf"); /* link to font file */
+    font-family: CursedTimer; /* naming imported font */
+}
+
+* {
+    box-sizing: border-box; /* height and width not affected by border and padding */
+}
+
+body {
+    text-align: center; /* set all the text inside the body element to center */
+    background-color: #1B244A; /* define the background color of the body */
+}
+
+.container { /* define the style of container class element */
+    display: flex; /* Displays the element as a block-level container*/
+    justify-content: space-around; /* items will have space before, between, and after them */
+    position: absolute; 
+    /* positioned relative to the viewport, position will be the same even when page is scrolled */
+    left: 50%; /* position the left end of the element 50% from the left edge of the browser */
+    top: 50%; /* position the top end of the element 50% from the top edge of the browser*/
+    transform: translate(-50%, -50%); 
+    /* transform the left, top point to be -50% of the element, (0,0) -> (-50%,-50%) making the center of the element (0,0)*/
+    column-gap: 15px; /* define to gap between two <div> column to be 100px wide */
+}
+
+h3 { /* define the style of h3 */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* define the he font style */
+    font-size: 50px; /* define the h3 font size, font size modified to fit the column*/
+    color: #EEEEEE; /* define the h3 font color */
+    margin: 0px 0px 0px 0px; /* redefine the h3 default margin to 0 */
+}
+
+.score { /* define the style of score class h2 element */
+    background-color: #080001; /* define the background color */
+    font-family: CursedTimer; /* define the font style */
+    font-size: 90px;  /* define the font size, the font size equals to the font height */
+    color: #F94F6D; /* define the color of the font */
+    width: 205px; /* define the width of the element, width modified to fit three digits */
+    height: 120px; /* define the height of the element */
+    padding: 15px; 
+    /* define the distance from the top and bottom of the element to the top and the bottom of the font */
+
+    border-radius: 5px; /* define the background edges to round and by how much */
+    margin-top: 21px; /* define the top margin length */
+    margin-bottom: 25px; /* define the bottom margin length */
+}
+
+.button { /* define the style of button class element */
+    font-family: CursedTimer; /* define the font style of the element */
+    color: #9AABD8; /* define the font color of the element */
+    border: 2px solid #9AABD8; /* define the border width, style, and color of the element */
+    border-radius: 5px; /* define the round edge of the element */
+    height: 45px; /* define the height of the element */
+    width: 61.5px; /* define he width of the element, width modified to fit the score width */
+    background-color: transparent; /* define the element background as transparent */
+    text-align: center; /* define text alignment of the element */
+}
+
+.button:not(:last-child) { 
+    /* define the style of the elements contained in the button class element except for the last element */
+    margin-right: 4.5px; /* define the right margin length */
+}
+
+.reset {
+    position: relative; /* defining the element's position without changing its ancestor's layout */
+    top: 108%; /* setting the element's position from the top */
+    font-family: CursedTimer; /* define the font style of the element */
+    color: #9AABD8; /* define the font color of the element */
+    border: 2px solid #9AABD8; /* define the border width, style, and color of the element */
+    border-radius: 5px; /* define the round edge of the element */
+    height: 45px; /* define the height of the element */
+    width: 80px; /* define the width of the element */
+    background-color: transparent; /* define the element background as transparent */
+    
+}

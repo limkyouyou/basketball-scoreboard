@@ -1,0 +1,53 @@
+<!DOCUTYPE html> <!-- Declare document type -->
+<html lang="en-US'> <!-- Declare html and language -->
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> <!-- Declare tag element -->
+        <title>Scrimba Basketball Scoreboard Project</title> 
+        <!-- Define the title of the document -->
+        <!-- Declare metadata below -->
+        <meta charset="UTF-8">
+        <!-- Declare the character set -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Declare viewport to fit different screen size -->
+        <meta name="description" content="This is the first Scrimba project to practice writing CSS, HTML, and JavaScript by creating a basketball scoreboard.">
+        <!-- Declare the document description -->
+        <meta name="keyword" content="scrimba, project, part, 1, CSS, HTML, javascript, bascketball, project, practice">
+        <!-- Define keywords for the document, note, google does not use meta keywords-->
+        <meta name="author" content="Kyo young Lim">
+        <!-- Declare the name of the document author -->
+        <link rel="icon" href="basketball.ico" type="image/x-icon">
+        <!-- Declare the document favicon -->
+        <link rel="stylesheet" href="index.css"> <!-- Define stylesheet relation and its link -->
+    </head>
+                                               
+    <body> <!-- Delcare body element -->
+        <div class="container"> <!-- Delcare the first parent div and its class -->
+            <div> <!-- Delclare the first child div of its parent-->
+                <h3>HOME</h3> <!-- Declare a heading -->
+                <h2 class="score" id="homeScoreEl">0</h2> 
+                <!-- Declare the second element, its class, and its id -->
+                <div> <!-- Declare the third element as div -->
+                    <button class="button" onclick="increment1Home()">+1</button> 
+                    <button class="button" onclick="increment2Home()">+2</button>
+                    <button class="button" onclick="increment3Home()">+3</button>
+                    <!-- Delcare all the buttons, its class, its onclick function by order -->
+                </div>    
+            </div>
+            <div> <!-- Declare the second child of its parent -->
+                <button class="reset" onclick="resetEl()">Reset</button> 
+                <!-- Delcare a button, its class, and its onclick function -->
+            </div>
+            <div> <!-- Delcare the third child of its parent -->
+                <h3>GUEST</h3> <!-- Delcare a heading, it is the first child of its parent -->
+                <h2 class="score" id="awayScoreEl">0</h2>
+                <!-- Declare the second element, its class, and its id -->
+                <div> <!-- Declare the third element as div -->
+                    <button class="button" onclick="increment1Away()">+1</button>
+                    <button class="button" onclick="increment2Away()">+2</button>
+                    <button class="button" onclick="increment3Away()">+3</button>
+                    <!-- Delcare all the buttons, its class, its onclick function by order -->
+                </div>    
+            </div>
+        </div>
+        <script src="index.js"></script> <!-- Declare the JavaScript source -->
+    </body>
+</html>
