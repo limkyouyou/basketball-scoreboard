@@ -26,7 +26,7 @@ body {
 
 h3 { /* define the style of h3 */
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* define the he font style */
-    font-size: 50px; /* define the h3 font size, font size modified to fit the column*/
+    font-size: 60px; /* define the h3 font size, font size modified to fit the column*/
     color: #EEEEEE; /* define the h3 font color */
     margin: 0px 0px 0px 0px; /* redefine the h3 default margin to 0 */
 }
